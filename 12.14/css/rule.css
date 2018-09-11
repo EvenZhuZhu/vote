@@ -1,0 +1,20 @@
+.hdgz_box{
+  background-color: #2b1a20;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0.2rem;
+  height: 100%;
+  position: absolute;
+}
+.hdgz_box .shijian{
+  padding: 0.4rem 0 0.1rem;
+}
+.hdgz_box .fangshi{
+  padding: 0 0 0.4rem;
+}
+.hdgz_box p{
+  line-height: 0.45rem;
+  font-size: 0.24rem;
+  color: #d8b995;
+}
+

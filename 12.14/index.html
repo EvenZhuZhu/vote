@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <meta name="viewport"
+        content="height=device-width,width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+<!--首页展示-->
+<div class="banner">
+  <div class="bgimg"></div>
+  <div class="ljcytp"><a href="javascript:;"></a></div>
+  <div class="hdgz"><a href="./rule.html"></a></div>
+  <div class="arrow"><a href="javascript:;"></a></div>
+</div>
+
+<!--参赛企业-->
+<div class="title"><img src="./images/title1.png"></div>
+<div class="list">
+  <ul>
+    <!--挖了个坑-->
+  </ul>
+</div>
+
+<!--投票成功与失败弹出框-->
+<div class="cg_box">
+  <div class="cg_bj">
+    <a href="javascript:;" class="gb_icn"><img src="images/gb.png"></a>
+    <p>恭喜您，投票成功</p>
+    <a href="javascript:;" class="queding">确 定</a>
+  </div>
+</div>
+<div class="cg_box1">
+  <div class="cg_bj1">
+    <a href="javascript:;" class="gb_icn1"><img src="images/gb.png"></a>
+    <p>抱歉，您已投过票了</p>
+    <a href="javascript:;" class="queding1">取消</a>
+  </div>
+</div>
+<div class="zhezhao"></div>
+
+<!--参赛企业渲染模板-->
+<script type="text/template" id="tpl">
+  {{each result as item}}
+  <li id={{item.id}}>
+    <i>{{item.company_ranking}}</i>
+    <a href="detail?id={{item.id}}">
+    <img src={{item.company_logo}}>
+    <p>{{item.company_name}}</p>
+    </a>
+    <a href="javascript:;" class="icon">投票({{item.company_nums}})</a>
+  </li>
+  {{/each}}
+</script>
+
+<!--引入相关js文件-->
+<script src="./lib/jquery.min.js"></script>
+<script src="./lib/template.js"></script>
+<script src="./js/index.js"></script>
+<script src="./lib/snowfall.jquery.js"></script>
+
+</body>
+</html>

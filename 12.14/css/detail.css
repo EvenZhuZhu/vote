@@ -1,0 +1,84 @@
+body {
+  background-color: #610300;
+}
+/*---------详情--------*/
+.hdgz_box{
+  background-color: #2b1a20;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0.2rem;
+  height: 100%;
+  position: absolute;
+}
+.hdgz_box .shijian{
+  padding: 0.4rem 0 0.1rem;
+}
+.hdgz_box .fangshi{
+  padding: 0 0 0.4rem;
+}
+.hdgz_box p{
+  line-height: 0.45rem;
+  font-size: 0.24rem;
+  color: #d8b995;
+}
+
+.list_xq{
+  width: 100%;
+  height: 9.97rem;
+  background: url(../images/xq.jpg)no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.list_xq .list_xq_logo{
+  display: inline-block;
+  height: 2.26rem;
+  width: 100%;
+  margin-top: 2.8rem;
+}
+.list_xq .list_xq_logo img{
+  height: 2.26rem;
+}
+.list_xq .list_xq_til{
+  color: #ffdfc1;
+  font-size: 0.3rem;
+  line-height: 0.4rem;
+  margin-top: -0.4rem;
+}
+.list_xq .list_xq_btn{
+  background: url("../images/tp_icn.png") no-repeat center;
+  width: 100%;
+  height:1.26rem;
+  background-size: 5.05rem 1.26rem;
+  display: inline-block;
+  line-height: 1.2rem;
+  text-align: center;
+  font-size: 0.34rem;
+  color: #ffdab5;
+  margin-top: 0.6rem;
+}
+.list_xq .list_xq_pm{
+  font-size: 0.28rem;
+  color: #720810;
+  line-height: 0.3rem;
+}
+.list_xq .list_xq_pm span{
+  color: #ffa800;
+  display: inline-block;
+  padding: 0 0.2rem;
+}
+
+.yun{
+  width: 100%;
+  height: 1.19rem;
+  background: url(../images/yun.png)no-repeat center;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;right: 0;left: 0;
+  margin: auto;
+}
+
+
+
+
+

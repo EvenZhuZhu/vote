@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>personalcenter</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/event.css">
+</head>
+<body>
+
+<!--banner-->
+<div class="banner">
+  <div class="bgimg"></div>
+  <div class="ljcytp"><a href="javascript:;"></a></div>
+  <div class="hdgz"><a href="javascript:;"></a></div>
+  <div class="arrow"><a href="javascript:;"></a></div>
+</div>
+<div class="title"><img src="images/title1.png"></div>
+<div class="list">
+  <ul>
+    <li>
+      <i>1</i>
+      <img src="images/img1.png">
+      <p>上海只是产权集团</p>
+      <a href="javascript:;" class="icon">投票(99999)</a>
+    </li>
+  </ul>
+</div>
+<div class="cg_box">
+  <div class="cg_bj">
+    <a href="javascript:;" class="gb_icn"><img src="images/gb.png"></a>
+    <p>恭喜您，投票成功</p>
+    <a href="javascript:;" class="queding">确 定</a>
+  </div>
+</div>
+<div class="cg_box1">
+  <div class="cg_bj1">
+    <a href="javascript:;" class="gb_icn1"><img src="images/gb.png"></a>
+    <p>抱歉，您已投过票了</p>
+    <a href="javascript:;" class="queding1">取消</a>
+  </div>
+</div>
+<div class="zhezhao"></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/template.js"></script>
+<script src="js/snowfall.jquery.js"></script>
+
+<script>
+  $(function () {
+    
+    //点击箭头向上滑动
+    $('.arrow>a').click(function () {
+      var t = $(window).scrollTop();
+      var length = $(document.body).height();
+      $('body,html').animate({'scrollTop': t + length}, 500)
+    });
+    /*投票列表前三标识颜色*/
+    $(".list ul li i").eq(0).css({"background-color": "#df2132"});
+    $(".list ul li i").eq(1).css({"background-color": "#f1583a"});
+    $(".list ul li i").eq(2).css({"background-color": "#0774c1"});
+    
+    /*点击投票弹框*/
+    $('.icon').click(function () {
+      $('.zhezhao,.cg_box').addClass('block');
+    })
+    $('.zhezhao,.gb_icn,.queding').click(function () {
+      $('.cg_box,.zhezhao').removeClass('block');
+    })
+  })
+  
+  //  window.onload = function () {
+  //    $.ajax({
+  //      type: "get",
+  //      url: "x.86sb.com/select/index",
+  //      dataType: "json",
+  //      success: function (result) {
+  //        console.log(result);
+  ////        var str = template("tpl",data);
+  ////        $(".main>ul").html(str);
+  //      },
+  //      error: function () {
+  //        console.log("请求出错啦");
+  //      }
+  //    })
+  //  };
+  
+  //雪花
+  $(document).snowfall('clear');
+  $(document).snowfall({
+    image: "images/huaban.png",
+    flakeCount: 30,
+    minSize: 5,
+    maxSize: 22
+  });
+
+</script>
+
+</body>
+</html>

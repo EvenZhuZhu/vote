@@ -1,0 +1,12 @@
+body {
+  background-color: #2b1a20;
+}
+
+.rule {
+  width: 100%;
+}
+
+.rule img{
+  width: 100%;
+  background-size: 100% auto;
+}

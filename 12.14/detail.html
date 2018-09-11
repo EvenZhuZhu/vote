@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>详情页</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/detail.css">
+</head>
+<body>
+
+<!--详情-->
+<div class="list_xq">
+  <!--挖了个坑-->
+</div>
+<div class="yun"></div>
+
+<!--详情渲染模板-->
+<script type="text/template" id="tpl1">
+  <a href="" class="list_xq_logo"><img src="{{result.company_logo}}"></a>
+  <p class="list_xq_til">{{result.company_name}}</p>
+  <a href="" class="list_xq_btn">立即投票({{result.company_nums}})</a>
+  <p class="list_xq_pm">目前排名第 <span>{{result.company_ranking}}</span> 位</p>
+</script>
+
+<!--引入相关js文件-->
+<script src="./lib/jquery.min.js"></script>
+<script src="./lib/template.js"></script>
+<script src="./js/detail.js"></script>
+
+</body>
+</html>
